@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "autodeploy": "git add . && git commit -m \"🚀 Auto-deploy update\" && git push && npm run deploy"
+    "autodeploy": "git add . && git commit -m \"🚀 Auto-deploy update\" && git push && npm run deploy",
+    "update": "npm run build && npm run deploy"
 
   },
   "dependencies": {
